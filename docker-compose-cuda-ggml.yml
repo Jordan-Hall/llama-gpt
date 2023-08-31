@@ -29,8 +29,6 @@ services:
               capabilities: [gpu]
 
   llama-gpt-ui:
-    # TODO: Use this image instead of building from source after the next release
-    # image: 'ghcr.io/getumbrel/llama-gpt-ui:latest'
     build:
       context: ./ui
       dockerfile: Dockerfile
